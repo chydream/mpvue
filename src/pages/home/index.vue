@@ -1,5 +1,5 @@
 <template>
-    <div class="home">{{msg}}{{isCollapse}}<i class="fa fa-address-book"></i></div>
+    <div class="home">{{msg}}{{isCollapse}}<i class="fa fa-address-book"></i>{{filePath}}</div>
 </template>
 <script>
 import { mapGetters } from 'vuex'
