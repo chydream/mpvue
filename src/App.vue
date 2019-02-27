@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style>
+@import url("./style/font-awesome.css");
 .container {
   height: 100%;
   display: flex;
