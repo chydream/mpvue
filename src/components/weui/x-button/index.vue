@@ -66,4 +66,7 @@ export default {
 </script>
 
 <style lang="less">
+.weui-btn.vux-x-button-no-border:after {
+  // display: none;
+}
 </style>

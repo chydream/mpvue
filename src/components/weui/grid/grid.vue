@@ -1,9 +1,6 @@
 <template>
-  <div
-    class="weui-grids"
-    :class="{
-      'vux-grid-no-lr-borders': !showLrBorders
-    }">
+  <div class="weui-grids"
+    :class="{'vux-grid-no-lr-borders': !showLrBorders}">
     <slot></slot>
   </div>
 </template>
@@ -53,8 +50,6 @@ export default {
 }
 </script>
 <style lang="less">
-@import '../../styles/weui/widget/weui-grid/weui-grid.less';
-
 .weui-grids.vux-grid-no-lr-borders {
   &:after {
     display: none;

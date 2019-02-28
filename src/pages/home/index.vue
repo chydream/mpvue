@@ -65,6 +65,11 @@
                 </view>
             </view>
         </view>
+        <grid>
+            <grid-item v-for="i in 6" :key="i">
+                <span class="grid-center">grid</span>
+            </grid-item>
+        </grid>
     </div>
 </template>
 <script>
@@ -72,11 +77,15 @@ import { mapGetters } from 'vuex'
 import XButton from '@/components/weui/x-button/index'
 import Flexbox from '@/components/weui/flexbox/flexbox'
 import FlexboxItem from '@/components/weui/flexbox/flexbox-item'
+import Grid from '@/components/weui/grid/grid'
+import GridItem from '@/components/weui/grid/grid-item'
 export default {
     components: {
         XButton,
         Flexbox,
-        FlexboxItem
+        FlexboxItem,
+        Grid,
+        GridItem
     },
     data () {
         return {
@@ -103,5 +112,13 @@ export default {
   background-color: #20b907;
   border-radius: 4px;
   background-clip: padding-box;
+}
+.grid-center {
+  display: block;
+  text-align: center;
+  color: #666;
+}
+.weui-grids {
+  background-color: #fff;
 }
 </style>

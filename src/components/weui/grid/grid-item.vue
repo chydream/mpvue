@@ -1,9 +1,7 @@
 <template>
-  <a href="javascript:;"
+  <navigator url="javascript:;"
     class="weui-grid"
-    :class="{
-      'vux-grid-item-no-border': (isLast && !$parent.showLrBorders) || (!isLast && !$parent.showVerticalDividers),
-    }"
+    :class="{'vux-grid-item-no-border': (isLast && !$parent.showLrBorders) || (!isLast && !$parent.showVerticalDividers)}"
     @click="onClick"
     :style="style">
     <div class="weui-grid__icon" v-if="hasIconSlot || icon">
@@ -17,12 +15,10 @@
       </slot>
     </p>
     <slot></slot>
-   </a>
+   </navigator>
 </template>
 
 <script>
-import { go } from '../../libs/router'
-
 export default {
   name: 'grid-item',
   props: ['icon', 'label', 'link'],
@@ -53,7 +49,6 @@ export default {
   methods: {
     onClick () {
       this.$emit('on-item-click')
-      go(this.link, this.$router)
     }
   },
   data () {
@@ -69,7 +64,7 @@ export default {
 <style lang="less">
 .weui-grid.vux-grid-item-no-border {
   &:before {
-    display: none;
+    // display: none;
   }
 }
 </style>

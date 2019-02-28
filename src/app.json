@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/demo/index/main",
     "pages/home/main",
     "pages/index/main",
     "pages/logs/main",
@@ -18,7 +19,13 @@
     "selectedColor": "#333",
     "borderStyle": "white",
 
-    "list": [{
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/demo/index/main",
+        "iconPath": "static/tabs/home.png",
+        "selectedIconPath": "static/tabs/home-active.png"
+      },{
       "text": "首页",
       "pagePath": "pages/index/main",
       "iconPath": "static/tabs/home.png",
