@@ -14,7 +14,7 @@ export default {
     order: [Number, String]
   },
   beforeMount () {
-    this.bodyWidth = document.documentElement.offsetWidth
+    this.bodyWidth = wx.getSystemInfoSync().windowWidth
   },
   methods: {
     buildWidth (width) {
