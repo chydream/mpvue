@@ -29,9 +29,9 @@ export default {
   }
 }
 </script>
-
 <style>
 @import url("./style/font-awesome.css");
+@import url("./style/weui.css");
 .container {
   height: 100%;
   display: flex;
@@ -48,4 +48,7 @@ export default {
   -webkit-transition: width 2s;
   -o-transition: width 2s;
 }
+</style>
+<style lang="less">
+/* @import url("./style/weui/weui.less"); */
 </style>
