@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/home/main",
     "pages/index/main",
     "pages/logs/main",
-    "pages/counter/main",
-    "pages/home/main"
+    "pages/counter/main"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,7 +23,7 @@
       "pagePath": "pages/index/main",
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
-    }, {
+    },{
       "text": "Home",
       "pagePath": "pages/home/main",
       "iconPath": "static/tabs/home.png",
