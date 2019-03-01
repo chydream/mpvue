@@ -13,6 +13,16 @@ const mixinsFun = {
   created () {
   },
   methods: {
+    wxOpen: function (itemList) {
+      wx.showActionSheet({
+          itemList: itemList,
+          success: function (res) {
+              if (!res.cancel) {
+                  console.log(res.tapIndex)
+              }
+          }
+      })
+    }
   }
 }
 const mixinsIndex = {
