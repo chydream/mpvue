@@ -13,6 +13,13 @@ const mixinsFun = {
   created () {
   },
   methods: {
+    wxOpenToast: function (title, icon) {
+      wx.showToast({
+          title: title,
+          icon: icon == undefined ? icon : 'success', // loading
+          duration: 3000
+      })
+    },
     wxOpenUrl: function (url) {
       wx.navigateTo({
         url: url

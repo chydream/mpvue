@@ -36,9 +36,9 @@
                 </div>
             </flexbox-item>
             <flexbox-item>
-                <div class="flex-demo">
+                <div class="flex-demo" @click="showToast">
                     <p><icon type="success" size="18" /></p>
-                    <p><span>Actionsheet</span></p>
+                    <p><span>Toast</span></p>
                 </div>
             </flexbox-item>
         </flexbox>
@@ -77,6 +77,9 @@ export default {
         },
         goUrl (url) {
             this.wxOpenUrl(url)
+        },
+        showToast () {
+            this.wxOpenToast('已完成')
         }
     },
     data () {
