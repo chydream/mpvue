@@ -4,8 +4,8 @@
     "pages/home/main",
     "pages/index/main",
     "pages/logs/main",
-    "pages/counter/main"
-    
+    "pages/counter/main",
+    "pages/demo/msg/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

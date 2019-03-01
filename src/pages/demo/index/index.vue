@@ -8,24 +8,26 @@
                 </div>
             </flexbox-item>
             <flexbox-item>
-                <div class="flex-demo">
+                <div class="flex-demo" @click="showAlert">
                     <p><icon type="success" size="18" /></p>
-                    <p><span>Actionsheet</span></p>
+                    <p><span>Alert</span></p>
                 </div>
             </flexbox-item>
             <flexbox-item>
-                <div class="flex-demo">
+                <div class="flex-demo" @click="showConfirm">
                     <p><icon type="success" size="18" /></p>
-                    <p><span>Actionsheet</span></p>
+                    <p><span>Confirm</span></p>
                 </div>
             </flexbox-item>
         </flexbox>
         <flexbox>
             <flexbox-item>
-                <div class="flex-demo">
-                    <p><icon type="success" size="18" /></p>
-                    <p><span>Actionsheet</span></p>
-                </div>
+                <a href="../msg/main">
+                    <div class="flex-demo" @click="goUrl">
+                        <p><icon type="success" size="18" /></p>
+                        <p><span>Msgeeeee</span></p>
+                    </div>
+                </a>
             </flexbox-item>
             <flexbox-item>
                 <div class="flex-demo">
@@ -45,7 +47,6 @@
 
 <script>
 import { mapState } from 'vuex'
-import Child from './Child'
 import Flexbox from '@/components/weui/flexbox/flexbox'
 import FlexboxItem from '@/components/weui/flexbox/flexbox-item'
 import Grid from '@/components/weui/grid/grid'
@@ -57,7 +58,6 @@ export default {
         FlexboxItem,
         Grid,
         GridItem,
-        Child,
         Actionsheet
     },
     name: 'demoList',
@@ -68,6 +68,15 @@ export default {
     methods: {
         showActionSheet () {
             this.wxOpen(this.itemList)
+        },
+        showAlert () {
+            this.wxOpenAlert(this.content)
+        },
+        showConfirm () {
+            this.wxOpenConfirm(this.title, this.content)
+        },
+        goUrl () {
+            // this.wxOpenUrl('../msg/main')
         }
     },
     data () {
@@ -80,7 +89,9 @@ export default {
             height: 0,
             i: 2,
             test: [1, 2],
-            itemList: ['A', 'B', 'C']
+            itemList: ['A', 'B', 'C'],
+            title: '123',
+            content: '456'
         }
     },
     computed: {

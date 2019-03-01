@@ -13,6 +13,11 @@ const mixinsFun = {
   created () {
   },
   methods: {
+    wxOpenUrl: function (url) {
+      wx.navigateTo({
+        url: url
+      })
+    },
     wxOpen: function (itemList) {
       wx.showActionSheet({
           itemList: itemList,
@@ -22,6 +27,33 @@ const mixinsFun = {
               }
           }
       })
+    },
+    wxOpenConfirm: function (title, content) {
+      wx.showModal({
+          title: title,
+          content: content,
+          confirmText: '确定',
+          cancelText: '取消',
+          success: function (res) {
+              console.log(res)
+              if (res.confirm) {
+                  console.log('用户点击主操作')
+              } else {
+                  console.log('用户点击辅助操作')
+              }
+          }
+      })
+    },
+    wxOpenAlert: function (content) {
+        wx.showModal({
+            content: content,
+            showCancel: false,
+            success: function (res) {
+                if (res.confirm) {
+                    console.log('用户点击确定')
+                }
+            }
+        })
     }
   }
 }
