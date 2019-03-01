@@ -23,10 +23,10 @@ export default {
     },
     methods: {
         openSuccess: function () {
-            this.wxOpenUrl('msg_success')
+            this.wxOpenUrl('../success/main')
         },
         openFail: function () {
-            this.wxOpenUrl('msg_fail')
+            this.wxOpenUrl('../fail/main')
         }
     }
 }

@@ -23,16 +23,16 @@
         <flexbox>
             <flexbox-item>
                 <a href="../msg/main">
-                    <div class="flex-demo" @click="goUrl">
+                    <div class="flex-demo">
                         <p><icon type="success" size="18" /></p>
-                        <p><span>Msgeeeee</span></p>
+                        <p><span>Msg</span></p>
                     </div>
                 </a>
             </flexbox-item>
             <flexbox-item>
-                <div class="flex-demo">
+                <div class="flex-demo"  @click="goUrl('../picker/main')">
                     <p><icon type="success" size="18" /></p>
-                    <p><span>Actionsheet</span></p>
+                    <p><span>Picker</span></p>
                 </div>
             </flexbox-item>
             <flexbox-item>
@@ -75,8 +75,8 @@ export default {
         showConfirm () {
             this.wxOpenConfirm(this.title, this.content)
         },
-        goUrl () {
-            // this.wxOpenUrl('../msg/main')
+        goUrl (url) {
+            this.wxOpenUrl(url)
         }
     },
     data () {

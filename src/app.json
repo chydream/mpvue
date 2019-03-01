@@ -5,7 +5,10 @@
     "pages/index/main",
     "pages/logs/main",
     "pages/counter/main",
-    "pages/demo/msg/main"
+    "pages/demo/msg/main",
+    "pages/demo/success/main",
+    "pages/demo/fail/main",
+    "pages/demo/picker/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
