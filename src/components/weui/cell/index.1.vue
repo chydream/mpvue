@@ -46,7 +46,26 @@ export default {
   components: {
     InlineDesc
   },
-  props: props(),
+  props: {
+    title: [String, Number],
+    value: [String, Number, Array],
+    isLink: Boolean,
+    isLoading: Boolean,
+    inlineDesc: [String, Number],
+    primary: {
+      type: String,
+      default: 'title'
+    },
+    link: [String, Object],
+    valueAlign: [String, Boolean, Number],
+    borderIntent: {
+      type: Boolean,
+      default: true
+    },
+    disabled: Boolean,
+    arrowDirection: String, // down or up
+    alignItems: String
+  },
   created () {
     /* istanbul ignore if */
     if (typeof SUPPORT_SSR_TAG === 'undefined' && process.env.NODE_ENV === 'development') {

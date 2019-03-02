@@ -50,9 +50,9 @@
                 </div>
             </flexbox-item>
             <flexbox-item>
-                <div class="flex-demo">
+                <div class="flex-demo" @click="goUrl('../cell/main')">
                     <p><icon type="success" size="18" /></p>
-                    <p><span>panel</span></p>
+                    <p><span>List</span></p>
                 </div>
             </flexbox-item>
             <flexbox-item>

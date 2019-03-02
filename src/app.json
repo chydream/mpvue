@@ -9,7 +9,8 @@
     "pages/demo/success/main",
     "pages/demo/fail/main",
     "pages/demo/picker/main",
-    "pages/demo/badge/main"
+    "pages/demo/badge/main",
+    "pages/demo/cell/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
