@@ -42,6 +42,26 @@
                 </div>
             </flexbox-item>
         </flexbox>
+        <flexbox>
+            <flexbox-item>
+                <div class="flex-demo" @click="goUrl('../badge/main')">
+                    <p><icon type="success" size="18" /></p>
+                    <p><span>badge</span></p>
+                </div>
+            </flexbox-item>
+            <flexbox-item>
+                <div class="flex-demo">
+                    <p><icon type="success" size="18" /></p>
+                    <p><span>panel</span></p>
+                </div>
+            </flexbox-item>
+            <flexbox-item>
+                <div class="flex-demo" @click="showToast">
+                    <p><icon type="success" size="18" /></p>
+                    <p><span>badge</span></p>
+                </div>
+            </flexbox-item>
+        </flexbox>
     </div>
 </template>
 

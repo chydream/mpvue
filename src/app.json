@@ -8,7 +8,8 @@
     "pages/demo/msg/main",
     "pages/demo/success/main",
     "pages/demo/fail/main",
-    "pages/demo/picker/main"
+    "pages/demo/picker/main",
+    "pages/demo/badge/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

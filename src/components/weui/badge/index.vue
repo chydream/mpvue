@@ -1,23 +1,22 @@
 <template>
-  <span v-text="text" :class="['vux-badge', {'vux-badge-dot': typeof text === 'undefined', 'vux-badge-single': typeof text !== 'undefined' && text.toString().length === 1}]"></span>
+  <span class="weui-badge" :class="{'weui-badge_dot':isDot}">{{text}}</span>
 </template>
 
 <script>
 export default {
   name: 'badge',
-  props: {
-    text: [String, Number]
+    props: {
+      text: [String, Number],
+      isDot: [Boolean]
+    }
   }
-}
 </script>
 
 <style lang="less">
-@import '../../styles/variable.less';
-
 .vux-badge {
   display: inline-block;
   text-align: center;
-  background: @badge-bg-color;
+  background: red;
   color: #fff;
   font-size: 12px;
   height: 16px;
