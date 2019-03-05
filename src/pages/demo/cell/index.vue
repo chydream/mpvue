@@ -1,6 +1,6 @@
 <template>
     <div>
-        <cell></cell>
+        <cell :text="text"></cell>
     </div>
 </template>
 <script>
@@ -11,8 +11,13 @@ export default {
     },
     data () {
         return {
-            msg: 'hello',
-            num: 1
+            text: 'hello',
+            num: 1,
+            items: [{
+                title: '什么情况',
+                icon: '',
+                remark: ''
+            }]
         }
     }
 }
