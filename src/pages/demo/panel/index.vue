@@ -1,15 +1,13 @@
 <template>
     <div>
-        <cell-list :title="title" :items="items"></cell-list>
+        <panel></panel>
     </div>
 </template>
 <script>
-import cellList from '@/components/weui/cell/index'
-import card from '@/components/card'
+import panel from '@/components/weui/panel/index'
 export default {
     components: {
-        cellList,
-        card
+        panel
     },
     data () {
         return {
