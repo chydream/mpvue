@@ -10,7 +10,8 @@
     "pages/demo/fail/main",
     "pages/demo/picker/main",
     "pages/demo/badge/main",
-    "pages/demo/cell/main"
+    "pages/demo/cell/main",
+    "pages/demo/panel/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

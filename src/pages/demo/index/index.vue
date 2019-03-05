@@ -46,7 +46,7 @@
             <flexbox-item>
                 <div class="flex-demo" @click="goUrl('../badge/main')">
                     <p><icon type="success" size="18" /></p>
-                    <p><span>badge</span></p>
+                    <p><span>Badge</span></p>
                 </div>
             </flexbox-item>
             <flexbox-item>
@@ -56,9 +56,9 @@
                 </div>
             </flexbox-item>
             <flexbox-item>
-                <div class="flex-demo" @click="showToast">
+                <div class="flex-demo" @click="goUrl('../panel/main')">
                     <p><icon type="success" size="18" /></p>
-                    <p><span>badge</span></p>
+                    <p><span>Panel</span></p>
                 </div>
             </flexbox-item>
         </flexbox>
