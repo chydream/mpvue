@@ -7,6 +7,12 @@ const mixinsFun = {
         add: 'add',
         edit: 'edit',
         delete: 'delete'
+      },
+      host: 'http://localhost:5757',
+      config: {
+        host: 'http://localhost:5757',
+        loginUrl: `http://localhost:5757/weapp/login`,
+        userUrl: `http://localhost:5757/weapp/user`
       }
     }
   },
@@ -61,6 +67,30 @@ const mixinsFun = {
                 }
             }
         })
+    },
+    request (url, method, data, header = {}) {
+      return new Promise((resolve, reject) => {
+        wx.request({
+          data,
+          method,
+          header,   
+          url: this.config.host + url, 
+          success: function (res) {
+            if (res.data.code === 0) {
+              resolve(res.data.data)
+            } else {
+              this.wxOpenConfirm('失败', res.data.data.msg)
+              reject(res.data)
+            }
+          }
+        })
+      })
+    },
+    post (url, data) {
+      return this.request(url, 'POST', data)
+    },
+    get (url, data) {
+      return this.request(url, 'GET', data)
     }
   }
 }

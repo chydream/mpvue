@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/login/main",
+    "pages/books/main",
+    "pages/comments/main",
     "pages/demo/index/main",
     "pages/home/main",
     "pages/index/main",
@@ -27,26 +30,29 @@
 
     "list": [
       {
+        "pagePath": "pages/login/main",
+        "text": "我",
+        "iconPath": "static/tabs/home.png",
+        "selectedIconPath": "static/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/books/main",
+        "text":"图书",
+        "iconPath": "static/tabs/home.png",
+        "selectedIconPath": "static/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/comments/main",
+        "text": "评论",
+        "iconPath": "static/tabs/home.png",
+        "selectedIconPath": "static/tabs/home-active.png"
+      },
+      {
         "text": "首页",
         "pagePath": "pages/demo/index/main",
         "iconPath": "static/tabs/home.png",
         "selectedIconPath": "static/tabs/home-active.png"
-      },{
-      "text": "首页",
-      "pagePath": "pages/index/main",
-      "iconPath": "static/tabs/home.png",
-      "selectedIconPath": "static/tabs/home-active.png"
-    },{
-      "text": "Home",
-      "pagePath": "pages/home/main",
-      "iconPath": "static/tabs/home.png",
-      "selectedIconPath": "static/tabs/home-active.png"
-    },{
-      "text": "订单",
-      "pagePath": "pages/logs/main",
-      "iconPath": "static/tabs/orders.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
-    }],
+      }],
 
     "items": [{
       "name": "首页",
