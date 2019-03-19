@@ -1,13 +1,6 @@
 const mixinsFun = {
   data () {
     return {
-      filePath: 'http://192.168.80.105/FileCenter',
-      permission: {
-        view: 'view',
-        add: 'add',
-        edit: 'edit',
-        delete: 'delete'
-      },
       host: 'http://localhost:5757',
       config: {
         host: 'http://localhost:5757',
@@ -91,6 +84,21 @@ const mixinsFun = {
     },
     get (url, data) {
       return this.request(url, 'GET', data)
+    },
+    scanCode () {
+      wx.scanCode({
+        onlyFromCamera: true,
+        success (res) {
+          console.log(res)
+        }
+      })
+    },
+    getSystemInfo () {
+       wx.getSystemInfo({
+        success (res) {
+          console.log(res)
+        }
+      })
     }
   }
 }

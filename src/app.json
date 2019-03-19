@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/login/main",
     "pages/books/main",
     "pages/comments/main",
+    "pages/login/main",
     "pages/demo/index/main",
     "pages/home/main",
     "pages/index/main",
@@ -30,12 +30,6 @@
 
     "list": [
       {
-        "pagePath": "pages/login/main",
-        "text": "我",
-        "iconPath": "static/tabs/home.png",
-        "selectedIconPath": "static/tabs/home-active.png"
-      },
-      {
         "pagePath": "pages/books/main",
         "text":"图书",
         "iconPath": "static/tabs/home.png",
@@ -44,6 +38,12 @@
       {
         "pagePath": "pages/comments/main",
         "text": "评论",
+        "iconPath": "static/tabs/home.png",
+        "selectedIconPath": "static/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/login/main",
+        "text": "我",
         "iconPath": "static/tabs/home.png",
         "selectedIconPath": "static/tabs/home-active.png"
       },

@@ -8,7 +8,7 @@
     <button open-type="getUserInfo" lang="zh_CN" @getuserinfo="onGotUserInfo">
       获取用户信息
     </button>
-    <button v-if='userinfo.openId' @click='scanBook' class='btn'>添加图书</button>
+    <button @click='scanBook' class='btn'>添加图书</button>
   </div>
 </template>
 <script>
@@ -63,7 +63,7 @@ export default {
     if (userinfo) {
       this.userinfo = userinfo
     }
-    // console.log(this.userinfo)
+    console.log(this.userinfo)
   }
 }
 </script>
